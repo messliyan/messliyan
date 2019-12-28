@@ -14,7 +14,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-import brave.sampler.Sampler;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.NetUtil;
@@ -64,9 +63,5 @@ public class ProductViewServiceRibbonApplication {
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
-    @Bean
-    public Sampler defaultSampler() {
-    	return Sampler.ALWAYS_SAMPLE;
-    }  
-
+	
 }

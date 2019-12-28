@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import cn.how2j.springcloud.pojo.Product;
 import cn.how2j.springcloud.service.ProductService;
 @Controller
-@RefreshScope
 public class ProductController {
 	@Autowired ProductService productService;
 	
