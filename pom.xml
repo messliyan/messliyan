@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>springCloud</groupId>
+    <artifactId>parentMavenProject</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>springcloud-view-service-ribbon</artifactId>
+  <name>springCloud-view-service-ribbon</name>
+  <description>视图+负载均衡</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework.cloud</groupId>
+  		<artifactId>
+  			spring-cloud-starter-netflix-eureka-client
+  		</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-thymeleaf</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.cloud</groupId>
+  		<artifactId>spring-cloud-starter-zipkin</artifactId>
+  	</dependency>
+  </dependencies>
+</project>
