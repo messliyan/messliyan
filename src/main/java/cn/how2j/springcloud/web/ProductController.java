@@ -14,7 +14,7 @@ import cn.how2j.springcloud.service.ProductService;
 public class ProductController {
 	@Autowired ProductService productService;
 	
-	@Value("${version}")
+	@Value("${name}")
 	String version;
 	
     @RequestMapping("/products")
